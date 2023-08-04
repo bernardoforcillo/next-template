@@ -1,0 +1,45 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build container (nerdctl-ks3)",
+      "command": "nerdctl",
+      "args": [
+        "build",
+        "--namespace",
+        "k8s.io",
+        "-t",
+        "example/example-com:dev",
+        "."
+      ],
+      "type": "shell",
+      "icon": {
+        "color": "terminal.ansiBlue",
+        "id": "run"
+      },
+      "problemMatcher": [],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    },
+    {
+      "label": "build container (nerdctl-default)",
+      "command": "nerdctl",
+      "args": [
+        "build",
+        "--namespace",
+        "default",
+        "-t",
+        "example/example-com:dev",
+        "."
+      ],
+      "type": "shell",
+      "icon": {
+        "color": "terminal.ansiWhite",
+        "id": "run"
+      },
+      "problemMatcher": []
+    }
+  ]
+}

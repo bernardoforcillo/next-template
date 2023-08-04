@@ -1,0 +1,6 @@
+.git
+.vscode
+Kubernetes
+*Dockerfile*
+*compose*
+node_modules

@@ -1,0 +1,3 @@
+# A NextJs template project
+
+
