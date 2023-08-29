@@ -4,7 +4,7 @@
   "description": "A NextJs template project",
   "version": "0.0.1",
   "private": true,
-  "license": "",
+  "license": "MIT",
   "author": {
     "name": "Bernardo Forcillo",
     "email": "bernardoforcillo@outlook.com"
