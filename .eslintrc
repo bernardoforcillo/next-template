@@ -1,4 +1,23 @@
 {
-  "extends": ["next/core-web-vitals", "eslint-config-next", "eslint-config-prettier", "plugin:tailwindcss/recommended"],
-  "plugins": ["prettier", "tailwindcss"]
+  "extends": [
+    "eslint-config-next",
+    "next/core-web-vitals",
+    "eslint-config-prettier",
+    "plugin:react/recommended",
+    "plugin:prettier/recommended",
+    "plugin:tailwindcss/recommended"
+  ],
+  "plugins": ["react", "prettier", "tailwindcss", "@typescript-eslint"],
+  "rules": {
+    "camelcase": "error",
+    "spaced-comment": "error",
+    "no-use-before-define": "off",
+    "quotes": ["error", "single"],
+    "no-duplicate-imports": "error",
+    "react/react-in-jsx-scope": "off",
+    "@typescript-eslint/no-use-before-define": [ "error" ],
+    "prettier/prettier": ["error", { "endOfLine": "auto" }],
+    "react/jsx-filename-extension": ["warn", { "extensions": [".tsx"] }],
+    "max-len": ["warn", { "code": 100, "ignoreComments": true, "ignoreUrls": true }]
+  }
 }

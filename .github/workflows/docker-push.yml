@@ -2,9 +2,9 @@ name: build container and push to dockerhub
 on:
   push:
     branches:
-      - "main"
+      - 'main'
     tags:
-      - "v*"
+      - 'v*'
 jobs:
   docker:
     runs-on: ubuntu-latest
