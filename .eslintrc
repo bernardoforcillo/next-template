@@ -4,12 +4,13 @@
     "next/core-web-vitals",
     "eslint-config-prettier",
     "plugin:react/recommended",
+    "plugin:@next/next/recommended",
     "plugin:prettier/recommended",
     "plugin:tailwindcss/recommended",
     "plugin:@typescript-eslint/recommended"
   ],
   "parser": "@typescript-eslint/parser",
-  "plugins": ["react", "prettier", "tailwindcss", "@typescript-eslint"],
+  "plugins": ["@next/next", "react", "prettier", "tailwindcss", "@typescript-eslint"],
   "rules": {
     "camelcase": "error",
     "spaced-comment": "error",
@@ -24,5 +25,8 @@
     "prettier/prettier": ["error", { "endOfLine": "auto" }],
     "react/jsx-filename-extension": ["warn", { "extensions": [".tsx"] }],
     "max-len": ["warn", { "code": 100, "ignoreComments": true, "ignoreUrls": true }]
-  }
+  },
+  "ignorePatterns":[
+    "next-env.d.ts"
+  ]
 }
