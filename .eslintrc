@@ -5,8 +5,10 @@
     "eslint-config-prettier",
     "plugin:react/recommended",
     "plugin:prettier/recommended",
-    "plugin:tailwindcss/recommended"
+    "plugin:tailwindcss/recommended",
+    "plugin:@typescript-eslint/recommended"
   ],
+  "parser": "@typescript-eslint/parser",
   "plugins": ["react", "prettier", "tailwindcss", "@typescript-eslint"],
   "rules": {
     "camelcase": "error",
@@ -15,7 +17,10 @@
     "quotes": ["error", "single"],
     "no-duplicate-imports": "error",
     "react/react-in-jsx-scope": "off",
-    "@typescript-eslint/no-use-before-define": [ "error" ],
+    "@typescript-eslint/indent": ["error", 2],
+    "@typescript-eslint/no-unused-vars": "error",
+    "@typescript-eslint/no-explicit-any": "error",
+    "@typescript-eslint/no-use-before-define": ["error"],
     "prettier/prettier": ["error", { "endOfLine": "auto" }],
     "react/jsx-filename-extension": ["warn", { "extensions": [".tsx"] }],
     "max-len": ["warn", { "code": 100, "ignoreComments": true, "ignoreUrls": true }]
